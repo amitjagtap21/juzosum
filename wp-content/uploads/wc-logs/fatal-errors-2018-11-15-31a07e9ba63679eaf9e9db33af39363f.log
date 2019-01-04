@@ -1,0 +1,10 @@
+2018-11-15T19:47:19+00:00 CRITICAL Uncaught Error: Call to a member function load_reports() on null in /var/app/current/wp-content/plugins/elementor/includes/tracker.php:321
+Stack trace:
+#0 /var/app/current/wp-content/plugins/elementor/includes/tracker.php(136): Elementor\Tracker::get_system_reports_data()
+#1 /var/app/current/wp-includes/class-wp-hook.php(286): Elementor\Tracker::send_tracking_data()
+#2 /var/app/current/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /var/app/current/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#4 /var/app/current/wp-cron.php(126): do_action_ref_array('elementor/track...', Array)
+#5 {main}
+  thrown
+
